@@ -1,10 +1,13 @@
 server:
-  port: ${SERVER_PORT}
+  port: 8081
 spring:
   datasource:
-    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_DBNAME}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    url: jdbc:mysql://localhost:3306/bdprestabancoms
+    username: root
+    password: Chile&2023
+jpa:
+  hibernate:
+    ddl-auto: update
 eureka:
   instance:
     preferIpAddress: true
