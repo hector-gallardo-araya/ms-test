@@ -24,7 +24,7 @@ spring:
         - id: ms-creditos
           uri: lb://ms-creditos
           predicates:
-            - Path=/api/creditos/**|/api/archivos/**
+            - Path=/api/creditos/**, /api/archivos/**
         - id: ms-simulador
           uri: lb://ms-simulador
           predicates:
