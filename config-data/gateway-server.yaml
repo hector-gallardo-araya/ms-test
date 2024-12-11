@@ -24,12 +24,12 @@ spring:
         - id: ms-creditos
           uri: lb://ms-creditos
           predicates:
-            - Path=/api/**
+            - Path=/api/creditos/**|/api/archivos/**
         - id: ms-simulador
           uri: lb://ms-simulador
           predicates:
-            - Path=/**
+            - Path=/api/res_simulacion/**
         - id: ms-usuarios
           uri: lb://ms-usuarios
           predicates:
-            - Path=/**
+            - Path=/api/usuarios
